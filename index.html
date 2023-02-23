@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title> Delivery Food - доставка еды на дом </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <!-- Обертка для шапки сайта -->
+            <div class="wrapper">
+                <a href="index.html" class="home"><img src="img/logo.svg" alt="Delivery Food" class="logo"></a>
+                <input type="text" placeholder="Адрес доставки" class="input adress__search">
+                <!-- Обертка для блока с кнопками -->
+                <div class="header__button">
+                    <button class="button log-in">Войти</button>
+                    <button class="button shop-cart">Корзина</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="promo">
+            <div class="container">
+                <!-- Обертка для секции promo -->
+                <div class="wrapper-promo">
+                    <!-- Обертка для заголовка и текста внутри секции promo -->
+                    <div class="promo__text">
+                        <h1 class="promo__title">
+                            Онлайн-сервис <br> доставки еды на дом
+                        </h1>
+                        <p class="promo__intro">
+                            Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="restaurants">
+            <div class="container">
+                <!-- Обертка для верхней части блока restaurants -->
+                <div class="restaurants__wrap-head">
+                    <h2 class="restaurants__title">
+                        Рестораны
+                    </h2>
+                    <input type="text" class="input restaurants__search" placeholder="Поиск блюд и ресторанов">
+                </div>
+    
+                <!-- Обертка для всех блока с карточками -->
+                <div class="cards">
+    
+                    <!-- Обертка для каждой карточки -->
+                    <a href="restaurant.html" class="card">
+                        <img src="img/card1.jpg" alt="Ресторан" class="card__image">
+                        <!-- Обертка для текста карточки -->
+                        <div class="card__text">
+                            <!-- Обертка для шапки карточки -->
+                            <div class="card__heading">
+                                <h3 class="card__title">Пицца плюс</h3>
+                                <span class="card__time">35 мин</span>
+                            </div>
+                            <!-- Обертка для дополнительной информации карточки -->
+                            <div class="card__info">
+                                <!-- Обертка для рейтинга карточки -->
+                                <div class="card__rate">
+                                    <img src="img/icon-star.svg" alt="Рейтинг">
+                                    <span class="card__rate_value">3.9</span>
+                                </div>
+                                <!-- Обертка для цены карточки -->
+                                <div class="card__price"> От 260 ₽ </div>
+                                <!-- Обертка для категории карточки -->
+                                <div class="card__category"> Пицца </div>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <div class="card">
+                        <img src="img/card2.jpg" alt="Ресторан" class="card__image">
+                        <!-- Обертка для текста карточки -->
+                        <div class="card__text">
+                            <!-- Обертка для шапки карточки -->
+                            <div class="card__heading">
+                                <h3 class="card__title">Тануки</h3>
+                                <span class="card__time">50 мин</span>
+                            </div>
+                            <!-- Обертка для дополнительной информации карточки -->
+                            <div class="card__info">
+                                <!-- Обертка для рейтинга карточки -->
+                                <div class="card__rate">
+                                    <img src="img/icon-star.svg" alt="Рейтинг">
+                                    <span class="card__rate_value">4.7</span>
+                                </div>
+                                <!-- Обертка для цены карточки -->
+                                <div class="card__price"> От 900 ₽ </div>
+                                <!-- Обертка для категории карточки -->
+                                <div class="card__category"> Роллы Суши </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="img/card3.jpg" alt="Ресторан" class="card__image">
+                        <!-- Обертка для текста карточки -->
+                        <div class="card__text">
+                            <!-- Обертка для шапки карточки -->
+                            <div class="card__heading">
+                                <h3 class="card__title">FoodBand</h3>
+                                <span class="card__time">30 мин</span>
+                            </div>
+                            <!-- Обертка для дополнительной информации карточки -->
+                            <div class="card__info">
+                                <!-- Обертка для рейтинга карточки -->
+                                <div class="card__rate">
+                                    <img src="img/icon-star.svg" alt="Рейтинг">
+                                    <span class="card__rate_value">4.3</span>
+                                </div>
+                                <!-- Обертка для цены карточки -->
+                                <div class="card__price"> От 700 ₽ </div>
+                                <!-- Обертка для категории карточки -->
+                                <div class="card__category"> Пицца Wok`и </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="img/card4.jpg" alt="Ресторан" class="card__image">
+                        <!-- Обертка для текста карточки -->
+                        <div class="card__text">
+                            <!-- Обертка для шапки карточки -->
+                            <div class="card__heading">
+                                <h3 class="card__title">Жадина-птица</h3>
+                                <span class="card__time">60 мин</span>
+                            </div>
+                            <!-- Обертка для дополнительной информации карточки -->
+                            <div class="card__info">
+                                <!-- Обертка для рейтинга карточки -->
+                                <div class="card__rate">
+                                    <img src="img/icon-star.svg" alt="Рейтинг">
+                                    <span class="card__rate_value">4.9</span>
+                                </div>
+                                <!-- Обертка для цены карточки -->
+                                <div class="card__price"> От 1200 ₽ </div>
+                                <!-- Обертка для категории карточки -->
+                                <div class="card__category"> Роллы Суши </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="img/card5.jpg" alt="Ресторан" class="card__image">
+                        <!-- Обертка для текста карточки -->
+                        <div class="card__text">
+                            <!-- Обертка для шапки карточки -->
+                            <div class="card__heading">
+                                <h3 class="card__title">Точка еды</h3>
+                                <span class="card__time">45 мин</span>
+                            </div>
+                            <!-- Обертка для дополнительной информации карточки -->
+                            <div class="card__info">
+                                <!-- Обертка для рейтинга карточки -->
+                                <div class="card__rate">
+                                    <img src="img/icon-star.svg" alt="Рейтинг">
+                                    <span class="card__rate_value">3.5</span>
+                                </div>
+                                <!-- Обертка для цены карточки -->
+                                <div class="card__price"> От 400 ₽ </div>
+                                <!-- Обертка для категории карточки -->
+                                <div class="card__category"> Русская кухня </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="img/card6.jpg" alt="Ресторан" class="card__image">
+                        <!-- Обертка для текста карточки -->
+                        <div class="card__text">
+                            <!-- Обертка для шапки карточки -->
+                            <div class="card__heading">
+                                <h3 class="card__title">PizzaBurger</h3>
+                                <span class="card__time">55 мин</span>
+                            </div>
+                            <!-- Обертка для дополнительной информации карточки -->
+                            <div class="card__info">
+                                <!-- Обертка для рейтинга карточки -->
+                                <div class="card__rate">
+                                    <img src="img/icon-star.svg" alt="Рейтинг">
+                                    <span class="card__rate_value">4.3</span>
+                                </div>
+                                <!-- Обертка для цены карточки -->
+                                <div class="card__price"> От 450 ₽ </div>
+                                <!-- Обертка для категории карточки -->
+                                <div class="card__category"> Пицца Бургеры </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <img src="img/logo.svg" alt="Delivery Food" class="logo footer__logo">
+                <nav class="footer__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Ресторанам</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Курьерам</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Пресс-центр</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__social">
+                    <a href="#" class="social__links"> 
+                        <img src="img/inst.svg" alt="Инстаграм" class="social__image">
+                    </a>
+                    <a href="#" class="social__links"> 
+                        <img src="img/facebook.svg" alt="Фейсбук" class="social__image">
+                    </a>
+                    <a href="#" class="social__links"> 
+                        <img src="img/vk.svg" alt="ВКонтакте" class="social__image">
+                    </a>
+                </div>                
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

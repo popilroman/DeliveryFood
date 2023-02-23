@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* 
+    font-family: 'PT Sans Narrow', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* ---------------------------------------- СЕКЦИЯ HEADER ----------------------------------------- */
+
+.header {
+    padding-top: 44px; padding-bottom: 40px;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adress__search {
+    /* Блок занимает 80% свободного места */
+    flex: 0.8;
+    height: 40px;
+    padding-left: 32px;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    background-image: url(..//img/icon-home.svg);
+    background-repeat: no-repeat;
+    background-position: left 11px center;
+}
+
+.button {
+    padding: 8px 16px;
+    padding-left: 36px;    
+    background-position: left 16px center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.header__button button:nth-child(1) {
+    color: #fff;
+    background-color: #1890FF;
+    background-image: url(../img/icon-person.svg);
+    border: 1px solid #1890FF;
+}
+
+.header__button button:nth-child(2) {
+    color: #595959;
+    background-color: #fff;
+    background-image: url(../img/icon-cart.svg);
+    border: 1px solid #D9D9D9;
+    margin-left: 10px;
+}
+
+/* ________________________________________ СЕКЦИЯ HEADER _________________________________________ */
+
+.main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
+/* ---------------------------------------- СЕКЦИЯ RESTAURANTS ----------------------------------------- */
+
+.restaurants {
+    padding-bottom: 112px;
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
+.restaurants__wrap-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.restaurants__heading {
+    margin-right: 30px;
+    font-size: 36px;
+}
+
+.restaurants__info {
+    display: flex;
+    align-items: center;
+}
+
+.info__rate {
+    background-image: url(../img/icon-star.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 23px;
+    margin-right: 26px;
+}
+
+.info__rate_value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFC107;
+}
+
+.info__price::after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #8C8C8C;
+    vertical-align: middle;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+.info__price_value {
+    color: #8C8C8C;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.info__category__value {
+    color: #8C8C8C;   
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px; 
+}
+
+.cards {
+    margin-top: 44px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    /* Все, что за пределами карточки скрывается */
+    overflow: hidden; 
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+    max-width: 384px;
+}
+
+.card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.45);
+}
+
+.card__image {
+    max-width: 385px;
+    max-height: 252px;
+    object-fit: cover;
+}
+
+.card__info {
+    padding: 24px;
+    padding-bottom: 30px;
+    max-width: 384px;
+    min-height: 100%;
+}
+
+
+
+.card__text {
+    margin-bottom: 24px;
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.card__intro {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #8C8C8C;
+
+    /* Переносит текст, если не хватает места */
+    hyphens: auto;
+}
+
+.card__buy {
+    display: flex;
+    align-items: center;
+}
+
+.second {
+    color: #fff;
+    background-color: #1890FF;
+    background-image: url(../img/Rcart.svg);
+    border: 1px solid #1890FF;  
+    background-position: right 17px center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 36px;
+    margin-right: 32px;
+    line-height: 150%;
+}
+
+.card__price {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* ________________________________________ СЕКЦИЯ RESTAURANTS _________________________________________ */
+
+/* ---------------------------------------- СЕКЦИЯ FOOTER ----------------------------------------- */
+
+.footer {
+    padding: 60px 0;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    margin-right: 36px;
+}
+
+.footer__nav {
+    margin-right: auto;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    list-style-type: none;
+}
+
+/* Применяем свойство для всех, но НЕ для последнего ребенка */
+.nav__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #595959;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;    
+}
+
+.social__links {
+    text-decoration: none;
+}
+
+/* Применяем свойство для всех, но НЕ для первого ребенка */
+.social__links:not(:first-child) {
+    margin-left: 15px;
+}
+
+/* ________________________________________ СЕКЦИЯ FOOTER _________________________________________ */
+
+/* ---------------------------------------- СЕКЦИЯ MODAL ----------------------------------------- */
+
+.modal {
+    /* Зафиксируем окно на странице ресторана */
+    position: fixed;
+
+    /* Закрепим в верхнем левом углу */
+    left: 0;
+    top: 0;
+
+    /* Растянем на всю ширину и высоту */
+    width: 100%;
+    height: 100%;
+
+    /* Зададим полупрозрачный фон */
+    background: rgba(0, 0, 0, 0.5);
+
+    /* Отцентрируем дочерний элемент по центру */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 1s ease;
+
+    /* Скрыть изначально */
+    display: none;
+    visibility: hidden;
+
+
+
+}
+
+.modal__is-open {
+    /* Окно показывается */
+    display: flex;
+    visibility: visible;
+}
+
+.scroll-locked {
+    overflow: hidden
+}
+
+.modal__dialog {
+    /* Зададим блок обтекаемость потоком сайта */
+    position: absolute;
+
+    /* Ширина не может быть больше этого значения */
+    max-width: 780px;
+
+    /* Высота не может быть ниже этого значения*/
+    min-height: 520px;
+
+    /* Ширина и косметика */
+    width: 95%;
+    background: #FFFFFF;
+    border-radius: 5px;
+
+    /* Внутренние оступы */
+    padding: 41px 45px;
+}
+
+.modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.modal__title {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.modal__close {
+    background: none;
+    border: none;
+    font-size: 44px;
+    line-height: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.food__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 15px;
+}
+
+.food__name {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.food__price {
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.food__counter {
+    margin-left: 47px;
+    display: flex;
+    align-items: center;
+}
+
+.counter {
+    margin: 0 13px;
+    font-size: 16px;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+
+.counter__button {
+    width: 39px;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid #40A9FF;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #40A9FF;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.modal__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 52px;
+}
+
+.footer__pricetag {
+    background: #262626;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 20px;
+}
+
+.button__buy {
+    background-color: #1890FF;
+    border: 1px solid #1890FF;
+    border-radius: 2px;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 150%;
+}
+
+.button__cancel {
+    margin-left: 19px;
+    padding: 8px 16px;
+    border: 1px solid #D9D9D9;
+    background-color: #fff;
+    color: #595959;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 150%;
+}
+
+/* ________________________________________ СЕКЦИЯ MODAL _________________________________________ */
+
+
+
+/* ---------------------------------------- RESPONSIVE ----------------------------------------- */
+
+/* 1201px - 1400px */
+@media screen and (max-width:1400px) {
+
+    .container {
+        max-width: 1140px;
+    }
+
+    /* ---------- HEADER ---------- */
+
+    /* __________ HEADER __________ */
+
+    /* ---------- RESTAURANTS ---------- */
+    .cards {
+        justify-content: space-around;
+    }
+    /* __________ RESTAURANTS __________ */
+
+    /* ---------- FOOTER ---------- */
+    
+    /* __________ FOOTER __________ */
+    
+}
+
+/* 993px - 1200px */
+@media screen and (max-width:1200px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    /* ---------- HEADER ---------- */
+    /* __________ HEADER __________ */
+
+    /* ---------- RESTAURANTS ---------- */
+    /* __________ RESTAURANTS __________ */
+
+    /* ---------- FOOTER ---------- */
+    /* __________ FOOTER __________ */
+    
+}
+
+/* 769px - 992px */
+@media screen and (max-width:992px) {
+
+    .container {
+        max-width: 720px;
+    }
+
+    /* ---------- HEADER ---------- */
+    /* __________ HEADER __________ */
+
+    /* ---------- RESTAURANTS ---------- */
+
+    .cards {
+        justify-content: space-between;
+    }
+
+    .card {
+        flex-basis: 48%;
+    }
+
+    .card__image {
+        max-width: 100%;
+    }
+
+    .card__price {
+        font-size: 15px;
+    }
+    
+    /* __________ RESTAURANTS __________ */
+
+    /* ---------- FOOTER ---------- */
+
+    .footer__logo {
+        margin-right: 35px;
+    }
+
+    .nav__link {
+        font-size: 16px;
+    }
+    /* __________ FOOTER __________ */
+    
+}
+
+
+/* 577px - 768px */
+@media screen and (max-width:768px) {
+
+    .container {
+        max-width: 540px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .header__button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__button button:nth-child(2) {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    /* __________ HEADER __________ */
+
+    /* ---------- RESTAURANTS ---------- */
+
+    .restaurants__heading {
+        font-size: 30px;
+    }
+    
+    .card__info {
+        flex-wrap: wrap;
+    }
+
+    .card__title {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .card__intro {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .card__buy {
+        flex-direction: column;
+    }
+
+    .second {
+        order: 5;
+        margin: 0;
+        margin-top: 15px;
+    }
+    
+    /* __________ RESTAURANTS __________ */
+
+    /* ---------- FOOTER ---------- */
+    .nav__list {
+        flex-wrap: wrap;
+    }
+
+    .nav__item:nth-child(1),
+    .nav__item:nth-child(2) {
+        margin-bottom: 8px;
+    }
+    /* __________ FOOTER __________ */
+
+    /* ---------- MODAL ---------- */
+
+    .modal__title {
+        font-size: 25px;
+    }
+
+    .modal__close {
+        font-size: 36px;
+    }
+
+    .food__name {
+        font-size: 16px;
+    }
+
+    .food__price {
+        font-size: 18px;
+    }
+
+    .footer__pricetag {
+        font-size: 18px;
+    }
+
+    /* __________ MODAL __________ */
+    
+}
+
+/* 424px - 576px */
+@media screen and (max-width:576px) {
+    .container {
+        max-width: 90%;
+    }
+
+    /* ---------- HEADER ---------- */
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header__button {
+        margin-top: 50px;
+        flex-direction: row;
+    }
+
+    .header__button button:nth-child(2) {
+        margin: 0;
+        margin-left: 15px;
+    }
+
+    .adress__search {
+        /* По счету инпут станет пятым */
+        order: 5;
+        width: 100%;
+        margin-top: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    /* __________ HEADER __________ */
+
+    /* ---------- RESTAURANTS ---------- */
+    .restaurants__wrap-head {
+        flex-direction: column;
+    }
+
+    .restaurants__heading {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card__image {
+        width: 100%;
+    }
+
+    .card {
+        flex-basis: 73%;
+    }
+    /* __________ RESTAURANTS __________ */
+
+    /* ---------- FOOTER ---------- */
+    .footer__wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__nav {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .nav__list {
+        margin-bottom: 30px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer .nav__item {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer__logo {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    /* __________ FOOTER __________ */
+
+    /* ---------- MODAL ---------- */
+
+    /* Когда разрешение экрана станет маленьким, то необходим
+    будет скролл этого модального окна */
+    .modal {
+        overflow-y: scroll;
+    }
+
+    .modal__dialog {
+        height: auto;
+
+        /* Профилактический отступ при маленьком разрешение */
+        top: 268px;
+    }
+
+    .food__row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .food__name {
+        margin-bottom: 20px;
+    }
+
+    .food__price {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .food__counter {
+        margin-left: 0;
+    }
+
+    .modal__footer {
+        flex-direction: column;
+    }
+
+    .footer__buttons {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .button__cancel {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .footer__pricetag {
+        margin: auto;
+    }
+
+
+
+    /* __________ MODAL __________ */
+    
+}
+
+/* 321px - 424px */
+@media screen and (max-width:424px) {
+    .container {
+        max-width: 90%;
+    }
+
+    /* ---------- HEADER ---------- */
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header__button {
+        margin-top: 50px;
+        flex-direction: row;
+    }
+
+    .header__button button:nth-child(2) {
+        margin: 0;
+        margin-left: 15px;
+    }
+
+    .adress__search {
+        /* По счету инпут станет пятым */
+        order: 5;
+        width: 100%;
+        margin-top: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    /* __________ HEADER __________ */
+
+    /* ---------- RESTAURANTS ---------- */
+    .restaurants__wrap-head {
+        flex-direction: column;
+    }
+
+    .restaurants__heading {
+        margin-bottom: 25px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+    /* __________ RESTAURANTS __________ */
+
+    /* ---------- FOOTER ---------- */
+    .footer__wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__nav {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .nav__list {
+        margin-bottom: 30px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer .nav__item {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer__logo {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    /* __________ FOOTER __________ */
+    
+}
+
+
+
+
+/* ________________________________________ RESPONSIVE _________________________________________ */
