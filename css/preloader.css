@@ -1,3 +1,8 @@
+.hidden
+{
+    overflow-y: hidden;
+}
+
 .preloader
 {
     position: fixed;
