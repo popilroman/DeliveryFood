@@ -11,5 +11,5 @@ document.body.onload = function()
             preloader.classList.add("done");
             bodyTag.classList.remove("hidden");
         }
-    }, 1000);
+    }, 1500);
 }
