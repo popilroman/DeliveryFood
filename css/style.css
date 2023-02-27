@@ -28,6 +28,15 @@ body {
     margin: 0 auto;
 }
 
+.progressBar
+{   
+    position: fixed;
+    top: 0; left: 0;
+
+    height: 5px;
+    background-color: #1890FF;
+}
+
 /* ---------------------------------------- СЕКЦИЯ HEADER ----------------------------------------- */
 
 .header {
