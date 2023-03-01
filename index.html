@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
@@ -23,7 +24,7 @@
     <header class="header">
         <div class="container">
             <!-- Обертка для шапки сайта -->
-            <div class="wrapper">
+            <div class="wrapper wow bounceInDown" data-wow-delay="1.5s">
                 <a href="index.html" class="home"><img src="img/logo.svg" alt="Delivery Food" class="logo"></a>
                 <input type="text" placeholder="Адрес доставки" class="input adress__search">
                 <!-- Обертка для блока с кнопками -->
@@ -39,7 +40,7 @@
         <section class="promo">
             <div class="container">
                 <!-- Обертка для секции promo -->
-                <div class="wrapper-promo">
+                <div class="wrapper-promo wow bounceInRight" data-wow-delay="1.5s">
                     <!-- Обертка для заголовка и текста внутри секции promo -->
                     <div class="promo__text">
                         <h1 class="promo__title">
@@ -57,17 +58,19 @@
             <div class="container">
                 <!-- Обертка для верхней части блока restaurants -->
                 <div class="restaurants__wrap-head">
-                    <h2 class="restaurants__title">
+                    <h2 class="restaurants__title wow bounceInLeft" data-wow-delay="1.7s">
                         Рестораны
                     </h2>
-                    <input type="text" class="input restaurants__search" placeholder="Поиск блюд и ресторанов">
+                    <input type="text" 
+                    class="input restaurants__search wow bounceInRight" data-wow-delay="1.7s" 
+                    placeholder="Поиск блюд и ресторанов">
                 </div>
     
                 <!-- Обертка для всех блока с карточками -->
                 <div class="cards">
     
                     <!-- Обертка для каждой карточки -->
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.5s">
                         <img src="img/card1.jpg" alt="Ресторан" class="card__image">
                         <!-- Обертка для текста карточки -->
                         <div class="card__text">
@@ -91,7 +94,7 @@
                         </div>
                     </a>
     
-                    <div class="card">
+                    <div class="card wow fadeInUp" data-wow-delay="0.5s">
                         <img src="img/card2.jpg" alt="Ресторан" class="card__image">
                         <!-- Обертка для текста карточки -->
                         <div class="card__text">
@@ -115,7 +118,7 @@
                         </div>
                     </div>
     
-                    <div class="card">
+                    <div class="card wow fadeInUp" data-wow-delay="0.4s">
                         <img src="img/card3.jpg" alt="Ресторан" class="card__image">
                         <!-- Обертка для текста карточки -->
                         <div class="card__text">
@@ -139,7 +142,7 @@
                         </div>
                     </div>
     
-                    <div class="card">
+                    <div class="card wow fadeInUp" data-wow-delay="0.3s">
                         <img src="img/card4.jpg" alt="Ресторан" class="card__image">
                         <!-- Обертка для текста карточки -->
                         <div class="card__text">
@@ -163,7 +166,7 @@
                         </div>
                     </div>
     
-                    <div class="card">
+                    <div class="card wow fadeInUp" data-wow-delay="0.5s">
                         <img src="img/card5.jpg" alt="Ресторан" class="card__image">
                         <!-- Обертка для текста карточки -->
                         <div class="card__text">
@@ -187,7 +190,7 @@
                         </div>
                     </div>
     
-                    <div class="card">
+                    <div class="card wow fadeInUp" data-wow-delay="0.3s">
                         <img src="img/card6.jpg" alt="Ресторан" class="card__image">
                         <!-- Обертка для текста карточки -->
                         <div class="card__text">
@@ -218,7 +221,7 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer__wrapper">
+            <div class="footer__wrapper wow bounceIn" data-wow-delay="0.3s">
                 <img src="img/logo.svg" alt="Delivery Food" class="logo footer__logo">
                 <nav class="footer__nav">
                     <ul class="nav__list">
@@ -251,6 +254,10 @@
         </div>
     </footer>
 
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="js/progressBar.js"></script>
 </body>
 </html>
