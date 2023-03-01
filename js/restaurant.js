@@ -15,5 +15,3 @@ $(document).ready(function() {
 
 
 });
-
-new WOW().init(); //Инициализация бибилиотеки WOW.js

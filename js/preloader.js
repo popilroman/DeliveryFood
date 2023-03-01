@@ -11,5 +11,7 @@ document.body.onload = function()
             preloader.classList.add("done");
             bodyTag.classList.remove("hidden");
         }
+        new WOW().init(); //Инициализация бибилиотеки WOW.js
     }, 1500);
+    
 }

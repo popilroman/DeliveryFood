@@ -31,6 +31,26 @@
                 <div class="window-close_div2 window-close_div"></div>
             </div>
             <!-- /.auth__close-wrapper -->
+            <div class="auth__wrapper">
+                <img src="img/logo.svg" alt="Delivery Food" class="auth__logo">
+                <h2 class="auth__title">Авторизуйтесь</h2>
+                <form action="#" class="form-auth">
+                    <input type="email" class="form-auth__input form-auth__email" 
+                    placeholder="Укажите электронную почту" required>
+                    <input type="tel" class="form-auth__input form-auth__phone"
+                    placeholder="Укажите номер телефона" required>
+                    <div class="form-auth__remember">
+                        <input type="checkbox" class="form-auth__checkbox" id="form-auth__checkbox">        
+                        <label for="form-auth__checkbox" class="form-auth__label">
+                            Запомнить меня
+                        </label>            
+                    </div>
+                    <!-- /.form-auth__remember -->
+                    <button class="form-auth__btn" type="submit">Вход</button>
+                </form>
+                <!-- /.auth__form -->
+            </div>
+            <!-- /.auth__wrapper -->
         </div>
         <!-- /.auth__window -->
     </div>
@@ -39,7 +59,7 @@
     <header class="header">
         <div class="container">
             <!-- Обертка для шапки сайта -->
-            <div class="wrapper wow bounceInDown" data-wow-delay="1.5s">
+            <div class="wrapper wow bounceInDown" data-wow-delay="0.4s">
                 <a href="index.html" class="home"><img src="img/logo.svg" alt="Delivery Food" class="logo"></a>
                 <input type="text" placeholder="Адрес доставки" class="input adress__search">
                 <!-- Обертка для блока с кнопками -->
@@ -55,7 +75,7 @@
         <section class="promo">
             <div class="container">
                 <!-- Обертка для секции promo -->
-                <div class="wrapper-promo wow bounceInRight" data-wow-delay="1.5s">
+                <div class="wrapper-promo wow bounceInRight" data-wow-delay="1s">
                     <!-- Обертка для заголовка и текста внутри секции promo -->
                     <div class="promo__text">
                         <h1 class="promo__title">
@@ -73,11 +93,11 @@
             <div class="container">
                 <!-- Обертка для верхней части блока restaurants -->
                 <div class="restaurants__wrap-head">
-                    <h2 class="restaurants__title wow bounceInLeft" data-wow-delay="1.7s">
+                    <h2 class="restaurants__title wow bounceInLeft" data-wow-delay="1.5s">
                         Рестораны
                     </h2>
                     <input type="text" 
-                    class="input restaurants__search wow bounceInRight" data-wow-delay="1.7s" 
+                    class="input restaurants__search wow bounceInRight" data-wow-delay="1.5s" 
                     placeholder="Поиск блюд и ресторанов">
                 </div>
     
@@ -270,9 +290,6 @@
     </footer>
 
     <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
     <script src="js/progressBar.js"></script>
     <script src="js/auth.js"></script>
 </body>
