@@ -278,8 +278,12 @@ body {
     color: #595959;
     font-size: 18px;
     font-weight: 400;
+    transition: all 0.2s;
 }
-
+.nav__link:hover
+{
+    color: #000000;
+}
 .footer__social {
     display: flex;
     align-items: center;    
