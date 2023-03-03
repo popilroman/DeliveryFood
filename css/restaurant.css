@@ -342,12 +342,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 45px;
 }
 
 .modal__title {
     font-weight: 700;
     font-size: 36px;
+}
+.modal__main
+{
+    margin-top: 6.6%;
+    margin-bottom: 7.6%;
 }
 
 .modal__dialog .modal-close
@@ -360,9 +364,12 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding-bottom: 8px;
+    padding-bottom: 1.15%;
+    margin-bottom: 2.17%;
+}
+.food__row:not(:last-child)
+{
     border-bottom: 1px solid #D9D9D9;
-    margin-bottom: 15px;
 }
 
 .food__name {
@@ -405,7 +412,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 52px;
 }
 
 .footer__pricetag {
@@ -707,17 +713,10 @@ body {
 
     /* ---------- MODAL ---------- */
 
-    /* Когда разрешение экрана станет маленьким, то необходим
-    будет скролл этого модального окна */
-    .modal {
-        overflow-y: scroll;
-    }
-
+    
     .modal__dialog {
-        height: auto;
-
-        /* Профилактический отступ при маленьком разрешение */
-        top: 268px;
+        max-height: 550px;
+        overflow-x: scroll;
     }
 
     .food__row {
