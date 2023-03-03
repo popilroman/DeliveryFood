@@ -240,12 +240,14 @@
     </div>
 </footer>
 
-<!-- Добавлена анимация -->
-<div class="modal animated fadeIn fast"> 
+<div class="modal"> 
     <div class="modal__dialog">
         <div class="modal__header">
             <h3 class="modal__title"> Корзина </h3>
-            <button class="modal__close">&times;</button>
+            <div class="window-close modal-close" id="modal-close">
+                <div class="window-close_div1 window-close_div"></div>
+                <div class="window-close_div2 window-close_div"></div>
+            </div>
         </div>
         <div class="modal__main">
             <div class="food__row">
@@ -349,10 +351,6 @@
     </div>    
 </div>
 
-<script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/restaurant.js"></script>
 <script src="js/progressBar.js"></script>

@@ -303,62 +303,39 @@ body {
 /* ---------------------------------------- СЕКЦИЯ MODAL ----------------------------------------- */
 
 .modal {
-    /* Зафиксируем окно на странице ресторана */
     position: fixed;
+    left: 0; top: 0;
+    z-index: 1;
 
-    /* Закрепим в верхнем левом углу */
-    left: 0;
-    top: 0;
+    width: 100%; max-width: 100%;
+    height: 100vh; min-height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
 
-    /* Растянем на всю ширину и высоту */
-    width: 100%;
-    height: 100%;
+    transition: all 0.5s;
 
-    /* Зададим полупрозрачный фон */
-    background: rgba(0, 0, 0, 0.5);
-
-    /* Отцентрируем дочерний элемент по центру */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: all 1s ease;
-
-    /* Скрыть изначально */
-    display: none;
     visibility: hidden;
-
-
-
+    opacity: 0;
 }
 
 .modal__is-open {
-    /* Окно показывается */
-    display: flex;
     visibility: visible;
+    opacity: 1;
 }
 
-.scroll-locked {
-    overflow: hidden
-}
-
-.modal__dialog {
-    /* Зададим блок обтекаемость потоком сайта */
-    position: absolute;
-
+.modal__dialog 
+{
     /* Ширина не может быть больше этого значения */
-    max-width: 780px;
-
-    /* Высота не может быть ниже этого значения*/
+    width: 95%; max-width: 780px;
     min-height: 520px;
-
-    /* Ширина и косметика */
-    width: 95%;
+    
     background: #FFFFFF;
     border-radius: 5px;
 
-    /* Внутренние оступы */
     padding: 41px 45px;
+
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal__header {
@@ -373,13 +350,9 @@ body {
     font-size: 36px;
 }
 
-.modal__close {
-    background: none;
-    border: none;
-    font-size: 44px;
-    line-height: 0;
-    background-color: transparent;
-    cursor: pointer;
+.modal__dialog .modal-close
+{
+    right: 2%; top: 2%;
 }
 
 
